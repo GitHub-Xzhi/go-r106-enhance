@@ -39,7 +39,11 @@
 3. 重启设备即可。如果不想重启也可以直接执行`./script/r106-init.sh`脚本
 
 
+## `下载`
 
+- [蓝奏云下载](https://c-xzhi.lanzouu.com/b0mbd0wze) 密码：Xzhi
+
+- [GitHub下载](https://github.com/GitHub-Xzhi/go-r106-enhance/releases) 
 
 ## 💖支持
 
