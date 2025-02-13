@@ -102,7 +102,7 @@ func ProcessSMS(smsList []map[string]interface{}, cache *Cache) {
 			if time.Now().Unix()-int64(timestamp) < int64(Yaml.Sms.CacheTTL.Seconds()) {
 				phone := sms["phone"].(string)
 				content := sms["content"].(string)
-				datetime := time.Unix(int64(timestamp), 0).Format("2025-01-01 15:04:05") // 时间戳转换为格式化时间
+				datetime := time.Unix(int64(timestamp), 0).Format("2006-01-02 15:04:05") // 时间戳转换为格式化时间
 				text := fmt.Sprintf("%s\n%s\n\n%s\nR106", phone, content, datetime)
 
 				// 生成缓存的 MD5 键
