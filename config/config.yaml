@@ -1,0 +1,46 @@
+# 对外提供的API端口
+ApiPort: ":8686"
+
+# 短信相关配置
+Sms:
+  # 缓存有效时间，例如 168h 表示 168 小时（即一周）
+  CacheTTL: 168h
+  # 定时检查cache.json文件中过期记录并清理，例如 1m 表示每 1 分钟检查一次
+  FileCleanupPeriod: 1m
+  # 定时请求短信列表间隔时间，例如 10s 表示每 10 秒发送一次请求
+  RequestInterval: 10s
+
+# 电池相关配置
+Battery:
+  # 电量检测时间间隔，例如 30s 表示每 30 秒检测一次电量
+  CheckInterval: 30s
+  # 低电量阈值，低于该值会触发低电量警告
+  Low: 15
+  # 低电量通知时间间隔，例如 10m 表示每 10 分钟通知一次
+  NotifyInterval: 10m
+
+# 钉钉相关配置
+DingDing:
+  # 钉钉机器人访问令牌
+  AccessToken: "填写你的钉钉机器人访问令牌"
+  # 钉钉机器人签名密钥
+  Secret: "填写你的钉钉机器人签名密钥"
+
+# R106相关配置
+R106:
+  # 基础 URL，用于拼接其他接口的完整 URL
+  BaseURL: "http://192.168.43.1"
+  # 短信列表接口
+  SmsListURL: ${BaseURL}/action/sms_get_sms_list
+  # 登录接口
+  LoginURL: ${BaseURL}/goform/login
+  # 获取 MGDB 参数接口
+  GetMgdbParamsURL: ${BaseURL}/action/get_mgdb_params
+  # 设置 Wi-Fi 基本参数接口
+  WifiSetBasicParamsURL: ${BaseURL}/action/wifi_set_basic_params
+  # 用户名
+  UserName: "填写你的用户名"
+  # 密码
+  Password: "填写你的密码"
+
+
