@@ -28,13 +28,8 @@ type Config struct {
 	} `yaml:"Battery"`
 	// 外部服务相关配置
 	R106 struct {
-		BaseURL               string `yaml:"BaseURL"`               // 基础 URL
-		SmsListURL            string `yaml:"SmsListURL"`            // 短信列表完整 URL
-		LoginURL              string `yaml:"LoginURL"`              // 登录完整 URL
-		GetMgdbParamsURL      string `yaml:"GetMgdbParamsURL"`      // 获取 MGDB 参数完整 URL
-		WifiSetBasicParamsURL string `yaml:"WifiSetBasicParamsURL"` // 设置 Wi-Fi 基本参数完整 URL
-		UserName              string `yaml:"UserName"`              // 用户名
-		Password              string `yaml:"Password"`              // 密码
+		UserName string `yaml:"UserName"` // 用户名
+		Password string `yaml:"Password"` // 密码
 	} `yaml:"R106"`
 	// 钉钉相关配置
 	DingDing struct {

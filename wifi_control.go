@@ -26,7 +26,7 @@ func sendRequest(state string, cookieManager *CookieManager) error {
 		WifiPSK:       "Sz6z-Xzhi-%e7@iK",
 		WifiBroadcast: "visible",
 	}
-	_, err := PostRequestWithCookie("WiFi控制", Yaml.R106.WifiSetBasicParamsURL, requestBody, cookieManager)
+	_, err := PostRequestWithCookie("WiFi控制", WifiSetBasicParamsURL, requestBody, cookieManager)
 	if err != nil {
 		return fmt.Errorf("请求异常：%v", err)
 	}
@@ -39,7 +39,7 @@ func wifiIsEnable(cookieManager *CookieManager) bool {
 			"wifi_state_0"
 		]
 	}`
-	request, _ := PostRequestWithCookie("获取WiFi状态", Yaml.R106.GetMgdbParamsURL, body, cookieManager)
+	request, _ := PostRequestWithCookie("获取WiFi状态", GetMgdbParamsURL, body, cookieManager)
 	// 解析JSON响应
 	var result struct {
 		Retcode int `json:"retcode"`

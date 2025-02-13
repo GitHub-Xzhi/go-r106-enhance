@@ -22,7 +22,7 @@ func LoginAndGetCookie(cookieManager *CookieManager) string {
 	userName := HmacMD5(Yaml.R106.UserName)
 	password := HmacMD5(Yaml.R106.Password)
 	loginData := fmt.Sprintf(`{"username":"%s","password":"%s"}`, userName, password)
-	resp, respByte, err := PostRequest(Yaml.R106.LoginURL, headers, loginData)
+	resp, respByte, err := PostRequest(LoginURL, headers, loginData)
 	if err != nil {
 		slog.Errorf("请求异常：%v", err)
 		return ""

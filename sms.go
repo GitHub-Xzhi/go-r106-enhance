@@ -23,7 +23,7 @@ func FetchAllSMS(cache *Cache, cookieManager *CookieManager) bool {
 
 	for {
 		requestData := fmt.Sprintf(`{"start":%d,"end":%d,"smsbox":1}`, start, end)
-		responseBody, _ := PostRequestWithCookie("sms_get_sms_list请求", Yaml.R106.SmsListURL, requestData,
+		responseBody, _ := PostRequestWithCookie("sms_get_sms_list请求", SmsListURL, requestData,
 			cookieManager)
 
 		// 解析 JSON 响应

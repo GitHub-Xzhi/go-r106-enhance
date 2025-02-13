@@ -28,16 +28,6 @@ DingDing:
 
 # R106相关配置
 R106:
-  # 基础 URL，用于拼接其他接口的完整 URL
-  BaseURL: "http://192.168.43.1"
-  # 短信列表接口
-  SmsListURL: ${BaseURL}/action/sms_get_sms_list
-  # 登录接口
-  LoginURL: ${BaseURL}/goform/login
-  # 获取 MGDB 参数接口
-  GetMgdbParamsURL: ${BaseURL}/action/get_mgdb_params
-  # 设置 Wi-Fi 基本参数接口
-  WifiSetBasicParamsURL: ${BaseURL}/action/wifi_set_basic_params
   # 用户名
   UserName: "填写你的用户名"
   # 密码
