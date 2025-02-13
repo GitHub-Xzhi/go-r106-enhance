@@ -23,7 +23,6 @@ while true; do
     $PROGRAM >/dev/null 2>&1 &
     PROGRAM_PID=$!
     echo "$(date): $PROGRAM程序没有在运行，开始启动(PID: $PROGRAM_PID)..." >>"$LOG_FILE"
-    # 启动程序
   fi
 
   # 检查日志文件大小
