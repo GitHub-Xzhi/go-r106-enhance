@@ -1,11 +1,11 @@
 <div align="center">
     <h1>R106随身WiFi功能增强</h1>
-    <img alt="Golang" src="https://img.shields.io/badge/-Go-00ADD8?style=flat-square&logo=go&logoColor=ffffff
-">
+    <img alt="Golang" src="https://img.shields.io/badge/-Go-00ADD8?style=flat-square&logo=go&logoColor=ffffff">
     <img  src="https://img.shields.io/badge/R106%E9%9A%8F%E8%BA%ABWiFi-8A2BE2">
     <img src="https://img.shields.io/badge/license-MPL2.0-green">
     <a href="#下载"><img alt="下载最新版" src="https://img.shields.io/badge/Download-Latest%20Releases-blue"></a>
 </div>
+
 
 ## 功能
 
